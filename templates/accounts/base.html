@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta name="description" content="KIE Xususiy Bandlik Kompaniyasi!" />
+        <meta name="author" content="KIE" />
+        <title>KIE Xususiy Bandlik Kompaniyasi!</title>
+        <!-- Favicon-->
+        <link rel="icon" type="image/x-icon" href="/static/img/favicon.ico" />
+        <!-- Core theme CSS (includes Bootstrap)-->
+        <link href="{% static 'css/styles.css' %}" rel="stylesheet" />
+
+    </head>
+    <body>
+        <!-- Navigation-->
+        <!-- Button trigger modal -->
+
+
+<!-- Modal -->
+        
+        <nav class="navbar navbar-expand-lg navbar-light">
+            <div class="container">
+                <a class="navbar-brand text-dark" href="#!"><img src="/static/img/logo.png" alt=""></a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+                <div class="collapse navbar-collapse" id="navbarResponsive">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item active">
+                            <a class="nav-link text-dark" href="{% url 'kie_app:index' %}">
+                                <b>Bosh sahifa!</b>
+                                <span class="sr-only">(current)</span>
+                            </a>
+                        </li>
+                        <li class="nav-item"><a class="nav-link text-dark" href="#!"><b>Haqimizda</b></a></li>
+                        <li class="nav-item"><a class="nav-link text-dark" href="#!"><b>Xizmatlarimiz</b></a></li>
+                        <li class="nav-item"><a class="nav-link text-dark" href="{% url 'kie_app:contact' %}"><b>Menga ishchi kerak!</b></a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <!-- Header-->
+        <header class="bg-dark py-5 mb-5">
+            <div class="container h-100">
+                <div class="row h-100 align-items-center">
+                    <div class="col-lg-12">
+                        <h1 class="display-4 text-white mt-5 mb-2">KIE xususiy bandlik kompaniyasi!</h1>
+                        <p class="lead mb-5 text-white-50">Hozirda O'zbekistoning ko'plab fuqarolarini bandlik bilan ta'minlab kelayotgan va ish topishga yordam bera yotgan KIE Xususiy Bandlik Kompaniyasi!</p>
+                    </div>
+                </div>
+            </div>
+        </header>
+        {% block content %}
+            
+        {% endblock %}
+          <!-- Footer-->
+        <footer class="fixed-bottom py-5 bg-dark">
+            <div class="container"><p class="m-0 text-center text-white">Copyright &copy; Salohiddin 2021</p></div>
+        </footer>
+        <!-- Bootstrap core JS-->
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"></script>
+        <!-- Core theme JS-->
+        <script src="{% static 'js/scripts.js' %}"></script>
+        <script>
+            $(document).ready(function(){
+                $('#exampleModal').modal('show');
+            });
+        </script>
+    </body>
+</html>
