@@ -127,7 +127,7 @@
                         </div>
                         <form method="POST" action="">
                         {% csrf_token %}
-                        <div class="card-footer"><button class="btn btn-primary" type="submit" value={{user.username}}{{post.title}} name=title>Zakaz!</button></div>
+                        <div class="card-footer"><button class="btn btn-primary" type="submit" value="Ismi={{user.username}} Post={{post.title}}" name=title>Zakaz!</button></div>
                     </form>
                     </div>
                 </div>
