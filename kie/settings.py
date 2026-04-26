@@ -40,8 +40,12 @@ INSTALLED_APPS = [
     'kie_app',
     'ckeditor',
     'crispy_forms',
+    'crispy_bootstrap5',
     'accounts',
 ]
+
+CRISPY_ALLOWED_TEMPLATE_PACKS = "bootstrap5"
+CRISPY_TEMPLATE_PACK = "bootstrap5"
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
@@ -113,7 +117,6 @@ TIME_ZONE = 'UTC'
 
 USE_I18N = True
 
-USE_L10N = True
 
 USE_TZ = True
 
@@ -132,4 +135,3 @@ STATICFILES_DIRS = (
 LOGIN_REDIRECT_URL = '/'
 LOGOUT_REDIRECT_URL = '/'
 
-CRISPY_TEMPLATE_PACK = 'bootstrap4'
